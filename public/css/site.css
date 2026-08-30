@@ -1,0 +1,1824 @@
+/* =========================================================
+   LAKSHADWEEP MATRIMONY
+   Ocean Blue + White Theme
+   ========================================================= */
+
+:root {
+    --sea-blue: #0878d1;
+    --deep-blue: #005baa;
+    --dark-blue: #003f7d;
+    --light-blue: #eaf7ff;
+    --very-light-blue: #f5fbff;
+    --sky-blue: #29a9e8;
+    --white: #ffffff;
+    --text-dark: #12304a;
+    --text-muted: #647b8d;
+    --border-blue: #d8ecfa;
+}
+
+
+/* =========================
+   GLOBAL
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.main-navbar {
+    min-height: 70px;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5f2fb !important;
+}
+
+.brand-logo {
+    color: var(--deep-blue) !important;
+    font-size: 22px;
+}
+
+.brand-heart {
+    color: var(--sea-blue);
+    font-size: 27px;
+}
+
+.navbar .nav-link {
+    color: #23445d;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--sea-blue);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--sea-blue);
+    color: var(--sea-blue);
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn-primary {
+    background: var(--sea-blue);
+    border-color: var(--sea-blue);
+}
+
+.btn-primary:hover {
+    background: var(--deep-blue);
+    border-color: var(--deep-blue);
+}
+
+.btn-outline-primary {
+    color: var(--sea-blue);
+    border-color: var(--sea-blue);
+}
+
+.btn-outline-primary:hover {
+    background: var(--sea-blue);
+    border-color: var(--sea-blue);
+}
+
+
+/* Remove Bootstrap danger/red appearance */
+
+.btn-danger {
+    background: var(--sea-blue) !important;
+    border-color: var(--sea-blue) !important;
+}
+
+.btn-danger:hover {
+    background: var(--deep-blue) !important;
+    border-color: var(--deep-blue) !important;
+}
+
+.btn-outline-danger {
+    color: var(--sea-blue) !important;
+    border-color: var(--sea-blue) !important;
+}
+
+.btn-outline-danger:hover {
+    color: #fff !important;
+    background: var(--sea-blue) !important;
+    border-color: var(--sea-blue) !important;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero-carousel {
+    position: relative;
+}
+
+.hero-slide {
+    min-height: 470px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 72, 135, 0.82),
+            rgba(0, 120, 190, 0.35),
+            rgba(0, 170, 230, 0.05)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 95px;
+    color: white;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 800;
+    max-width: 650px;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SEARCH STRIP
+   ========================= */
+
+.search-strip {
+    position: relative;
+    margin-top: -35px;
+    z-index: 10;
+}
+
+.search-box {
+    background: white;
+    border-radius: 18px;
+    padding: 22px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border: 1px solid var(--border-blue);
+}
+
+.search-box small {
+    display: block;
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.search-box strong {
+    color: var(--dark-blue);
+}
+
+
+/* Search button */
+
+.search-box .btn-warning {
+    background: var(--sea-blue);
+    border-color: var(--sea-blue);
+    color: white;
+}
+
+.search-box .btn-warning:hover {
+    background: var(--deep-blue);
+}
+
+
+/* =========================
+   SECTION TITLES
+   ========================= */
+
+.section-kicker {
+    color: var(--sea-blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.section-title {
+    color: var(--dark-blue);
+    font-weight: 800;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+   ========================= */
+
+.feature-card {
+    background: white;
+    border: 1px solid var(--border-blue);
+    border-radius: 18px;
+    padding: 30px;
+
+    height: 100%;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 25px rgba(0, 100, 170, 0.07);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 100, 170, 0.13);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e2f3ff;
+    color: var(--sea-blue);
+
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+.feature-card h5 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   FEATURED PROFILES
+   ========================= */
+
+.bg-light {
+    background: var(--very-light-blue) !important;
+}
+
+.profile-card {
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border-blue);
+
+    box-shadow:
+        0 7px 22px rgba(0, 90, 150, 0.08);
+
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 90, 150, 0.16);
+}
+
+.profile-card-img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.profile-card-body {
+    padding: 18px;
+}
+
+.profile-card-body h5 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.profile-card-body p {
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   DEMO PROFILE GRID
+   ========================= */
+
+.demo-profile-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================
+   TESTIMONIALS
+   ========================= */
+
+.testimonial-card {
+    background: white;
+
+    border: 1px solid var(--border-blue);
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    display: flex;
+    gap: 18px;
+
+    align-items: center;
+
+    box-shadow:
+        0 7px 22px rgba(0, 90, 150, 0.07);
+}
+
+.testimonial-photo-wrap {
+    flex-shrink: 0;
+}
+
+.testimonial-photo-wrap img {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #dff3ff;
+}
+
+.testimonial-card p {
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.testimonial-card strong {
+    color: var(--sea-blue);
+}
+
+
+/* =========================
+   CTA
+   ========================= */
+
+.cta-section {
+    padding: 75px 20px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            120deg,
+            #006fc4,
+            #00a9df
+        );
+}
+
+.cta-section h2 {
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.cta-section p {
+    font-size: 17px;
+}
+
+.cta-section .btn-light {
+    color: var(--deep-blue);
+    font-weight: 700;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+    background:
+        linear-gradient(
+            135deg,
+            #003f7d,
+            #006cb7
+        );
+
+    color: white;
+
+    padding: 55px 0 25px;
+}
+
+.footer-brand {
+    color: white;
+    font-weight: 800;
+}
+
+.footer-brand span {
+    color: #8ee8ff;
+}
+
+.site-footer h6 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.site-footer p {
+    color: #d8f1ff;
+}
+
+.footer-description {
+    max-width: 420px;
+}
+
+.footer-link {
+    display: block;
+
+    color: #d9f3ff;
+
+    margin-bottom: 10px;
+
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: white;
+    padding-left: 4px;
+}
+
+.footer-line {
+    border-color: rgba(255,255,255,0.25);
+    margin-top: 35px;
+}
+
+
+/* =========================
+   CAROUSEL
+   ========================= */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   ALERT
+   ========================= */
+
+.alert-success {
+    border: none;
+
+    background: #e4f8ed;
+
+    color: #137443;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 991px) {
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .search-box {
+        flex-wrap: wrap;
+    }
+
+    .demo-profile-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-slide {
+        min-height: 520px;
+    }
+
+    .hero-content {
+        padding-top: 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .search-strip {
+        margin-top: -20px;
+    }
+
+    .search-box {
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .demo-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card-img {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================================
+   LAKSHADWEEP DOLPHIN LOGO
+   ========================================= */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-logo {
+    width: 230px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Footer logo */
+
+.footer-logo-box {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .main-logo {
+        width: 170px;
+        height: 75px;
+    }
+
+    .footer-logo {
+        width: 170px;
+    }
+
+}
+
+
+/* =========================================
+   HEADER LOGO + TEXT
+   ========================================= */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 14px;
+}
+
+.main-logo {
+    width: 105px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-name {
+    color: #0878d1;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.logo-matrimony {
+    color: #0878d1;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    line-height: 1.3;
+}
+
+.logo-tagline {
+    color: #0878d1;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .brand-logo {
+        gap: 6px;
+    }
+
+    .main-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-name {
+        font-size: 19px;
+    }
+
+    .logo-matrimony {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .logo-tagline {
+        display: none;
+    }
+
+}
+
+/* =========================================
+   LAKSHADWEEP NAVBAR
+   ========================================= */
+
+.main-navbar {
+    min-height: 105px;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5f2fb;
+    box-shadow: 0 2px 12px rgba(0, 90, 170, 0.06);
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-logo {
+    width: 82px;
+    height: 82px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* LOGO TEXT */
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+}
+
+.logo-name {
+    color: #0878d1;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-matrimony {
+    color: #0878d1;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    margin-top: 5px;
+}
+
+.logo-tagline {
+    color: #0878d1;
+    font-size: 10px;
+    margin-top: 7px;
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION */
+
+.main-navbar .navbar-nav {
+    gap: 4px;
+}
+
+.main-navbar .nav-link {
+    color: #12304a;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 12px !important;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.main-navbar .nav-link:hover {
+    color: #0878d1;
+}
+
+
+/* ACTIVE NAV LINK */
+
+.main-navbar .nav-link.active {
+    color: #0878d1;
+}
+
+.main-navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 2px;
+    height: 3px;
+    background: #0878d1;
+    border-radius: 5px;
+}
+
+
+/* LOGIN */
+
+.nav-login-btn {
+    margin-left: 8px;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+/* REGISTER */
+
+.nav-register-btn {
+    margin-left: 4px;
+    padding: 9px 19px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+/* LOGOUT FORM */
+
+.logout-form {
+    margin: 0;
+}
+
+
+/* PRIMARY BUTTON */
+
+.btn-primary {
+    background-color: #0878d1;
+    border-color: #0878d1;
+}
+
+.btn-primary:hover {
+    background-color: #005baa;
+    border-color: #005baa;
+}
+
+
+/* OUTLINE BUTTON */
+
+.btn-outline-primary {
+    color: #0878d1;
+    border-color: #0878d1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0878d1;
+    border-color: #0878d1;
+    color: #ffffff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 991px) {
+
+    .main-navbar {
+        min-height: 78px;
+    }
+
+    .main-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-name {
+        font-size: 21px;
+    }
+
+    .logo-matrimony {
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    .logo-tagline {
+        display: none;
+    }
+
+    .main-navbar .navbar-collapse {
+        padding: 15px 0;
+    }
+
+    .main-navbar .nav-link {
+        padding: 10px 5px !important;
+    }
+
+    .nav-login-btn,
+    .nav-register-btn {
+        margin: 6px 0;
+        display: inline-block;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 576px) {
+
+    .main-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-name {
+        font-size: 18px;
+    }
+
+    .logo-matrimony {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+}
+
+.main-navbar .container-fluid {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.brand-logo {
+    margin-left: 0;
+}
+
+/* =========================================
+   LAKSHADWEEP MATRIMONY FOOTER
+   ========================================= */
+
+.site-footer {
+    background: linear-gradient(
+        135deg,
+        #00599c 0%,
+        #0878d1 55%,
+        #009ed8 100%
+    );
+
+    color: #ffffff;
+    padding-top: 55px;
+    padding-bottom: 0;
+    margin-top: 0 !important;
+}
+
+
+/* MAIN FOOTER */
+
+.footer-main {
+    display: grid;
+
+    grid-template-columns:
+        2.2fr
+        1.1fr
+        1.1fr
+        1.5fr;
+
+    gap: 45px;
+
+    padding-bottom: 40px;
+}
+
+
+/* =========================================
+   BRAND SECTION
+   ========================================= */
+
+.footer-brand-section {
+    padding-right: 25px;
+}
+
+
+.footer-brand-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.footer-logo {
+    width: 115px;
+    height: 115px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.footer-brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-brand-text h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    line-height: 1.05;
+}
+
+
+.footer-brand-text h4 {
+    margin: 5px 0 0;
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 500;
+
+    letter-spacing: 6px;
+}
+
+
+.footer-brand-text p {
+    margin: 10px 0 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.footer-description {
+    max-width: 360px;
+
+    margin-top: 20px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+   ========================================= */
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.footer-social a {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+
+.footer-social a:hover {
+    background: #ffffff;
+    color: #0878d1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+   ========================================= */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-column h5 {
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    margin: 0 0 7px;
+}
+
+
+.footer-heading-line {
+    display: block;
+
+    width: 38px;
+    height: 3px;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+.footer-link,
+.footer-column > a {
+    color: rgba(255, 255, 255, 0.9);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-bottom: 11px;
+
+    transition: 0.2s ease;
+}
+
+
+.footer-link:hover,
+.footer-column > a:hover {
+    color: #ffffff;
+
+    padding-left: 4px;
+}
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+.contact-icon {
+    width: 25px;
+
+    flex-shrink: 0;
+
+    font-size: 16px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+   ========================================= */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    padding: 18px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 13px;
+}
+
+
+.footer-heart {
+    color: #ff4b5c;
+
+    font-size: 18px;
+
+    margin-left: 4px;
+}
+
+
+/* =========================================
+   RESPONSIVE FOOTER
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .footer-main {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand-section {
+        grid-column: span 3;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .site-footer {
+        padding-top: 40px;
+    }
+
+
+    .footer-main {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px 25px;
+    }
+
+
+    .footer-brand-section {
+        grid-column: span 2;
+
+        padding-right: 0;
+    }
+
+
+    .footer-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .footer-brand-text h3 {
+        font-size: 22px;
+    }
+
+
+    .footer-brand-text h4 {
+        font-size: 16px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-brand-section {
+        grid-column: span 1;
+    }
+
+
+    .footer-column {
+        grid-column: span 1;
+    }
+
+
+    .footer-brand-top {
+        gap: 10px;
+    }
+
+
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .footer-brand-text h3 {
+        font-size: 20px;
+    }
+
+
+    .footer-brand-text h4 {
+        font-size: 15px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .footer-description {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================
+   FULL WIDTH FOOTER
+   ========================================= */
+
+/* Remove Bootstrap container's large side margins */
+.site-footer > .container {
+    max-width: none !important;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+
+/* Spread footer content across the screen */
+.footer-main {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        2.3fr
+        1fr
+        1fr
+        1.4fr;
+
+    gap: 55px;
+
+    padding-bottom: 40px;
+}
+
+
+/* Brand section */
+.footer-brand-section {
+    padding-right: 20px;
+}
+
+
+/* Bottom line should also use full width */
+.footer-bottom {
+    width: 100%;
+}
+
+
+/* =========================================
+   LARGE SCREEN
+   ========================================= */
+
+@media (min-width: 1400px) {
+
+    .site-footer > .container {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .footer-main {
+        grid-template-columns:
+            2.4fr
+            1fr
+            1fr
+            1.4fr;
+
+        gap: 70px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .site-footer > .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer-main {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand-section {
+        grid-column: span 3;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    .site-footer > .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px 25px;
+    }
+
+    .footer-brand-section {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 576px) {
+
+    .site-footer > .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand-section {
+        grid-column: span 1;
+    }
+
+}
+
+.demo-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .demo-profile-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .demo-profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .demo-profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   ADMIN DASHBOARD
+   ========================================= */
+
+.admin-stat-card {
+    background: #ffffff;
+    border: 1px solid #dcecff;
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 120px;
+    box-shadow: 0 6px 20px rgba(0, 80, 150, 0.06);
+}
+
+
+.admin-stat-card span {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+.admin-stat-card strong {
+    display: block;
+    color: #064d89;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.admin-stat-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+
+    flex-shrink: 0;
+}
+
+
+.admin-stat-icon.total {
+    background: #e4f2ff;
+}
+
+
+.admin-stat-icon.pending {
+    background: #fff3cd;
+}
+
+
+.admin-stat-icon.active {
+    background: #dff7e8;
+}
+
+
+.admin-stat-icon.inactive {
+    background: #eeeeee;
+}
+
+
+/* =========================================
+   MANAGEMENT CARDS
+   ========================================= */
+
+.admin-management-card {
+    height: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dcecff;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 80, 150, 0.07);
+
+    transition: 0.2s ease;
+}
+
+
+.admin-management-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 80, 150, 0.12);
+}
+
+
+.management-icon {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 14px;
+
+    background: #e5f3ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 26px;
+
+    margin-bottom: 18px;
+}
+
+
+.admin-management-card h5 {
+    color: #064d89;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+.admin-management-card p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 72px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   QUICK ACTIONS
+   ========================================= */
+
+.admin-quick-section {
+    background: #f5faff;
+
+    border: 1px solid #dcecff;
+
+    border-radius: 16px;
+
+    padding: 28px;
+}
+
+
+.admin-quick-section h4 {
+    color: #064d89;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    .admin-stat-card {
+        min-height: 100px;
+    }
+
+    .admin-management-card {
+        padding: 22px;
+    }
+
+    .admin-management-card p {
+        min-height: auto;
+    }
+
+}
+
+.profile-section {
+    background: #f0f8ff;
+    border: 1px solid #d7ebf8 !important;
+    border-radius: 14px;
+}
+
+.profile-section .card-body {
+    background: #f0f8ff;
+    border-radius: 14px;
+}
+
+.profile-section h5 {
+    color: #075a9c;
+    font-weight: 700;
+    border-left: 4px solid #0d83d8;
+    padding-left: 12px;
+}
+
+.profile-section label {
+    font-weight: 600;
+    color: #173b59;
+}
+
+.profile-section .form-control,
+.profile-section .form-select {
+    background: #ffffff;
+}
+
+.education-box {
+    background: #ffffff;
+    border: 1px solid #d5e9f7;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.education-box h6 {
+    color: #075a9c;
+    font-weight: 700;
+}
+
+/* =========================================================
+   CUSTOMER MENU
+   ========================================================= */
+
+.customer-menu {
+    background: #eaf6ff;
+    border-bottom: 1px solid #cfe8f8;
+    box-shadow: 0 2px 6px rgba(0, 80, 140, 0.06);
+}
+
+.customer-menu-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+.customer-menu-inner a {
+    text-decoration: none;
+    color: #064b82;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+
+.customer-menu-inner a:hover {
+    background: #d7edfc;
+    color: #006dcc;
+}
+
+.customer-menu-inner a.active {
+    background: #087dcc;
+    color: white;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .customer-menu-inner {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 8px 0;
+    }
+
+    .customer-menu-inner a {
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+}
+
+/* Profile View Page */
+
+.profile-view-card {
+    background: #eef8ff;
+    border: 1px solid #d5ebfa;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    padding: 24px;
+    box-shadow: 0 3px 12px rgba(0, 80, 140, 0.06);
+}
+
+.profile-section-title {
+    color: #07558f;
+    font-size: 20px;
+    font-weight: 700;
+    border-left: 4px solid #087dcc;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    margin-bottom: 18px;
+}
+
+.profile-item span {
+    display: block;
+    color: #6c7a86;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.profile-item strong {
+    display: block;
+    color: #123d5c;
+    font-size: 15px;
+    font-weight: 600;
+}
+

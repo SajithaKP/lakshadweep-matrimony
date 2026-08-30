@@ -1,0 +1,2 @@
+<?php
+namespace App\Http\Controllers\Admin; use App\Http\Controllers\Controller; use App\Models\User; class DashboardController extends Controller { public function index(){return view('admin.dashboard', ['total'=>User::where('role','customer')->count(),'pending'=>User::where('role','customer')->where('status','pending')->count(),'active'=>User::where('role','customer')->where('is_active',true)->count(),'inactive'=>User::where('role','customer')->where('is_active',false)->count()]);} }
