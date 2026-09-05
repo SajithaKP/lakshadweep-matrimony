@@ -15,7 +15,14 @@ class AuthController extends Controller
     }
     public function register(Request $r)
     {
-        $v = $r->validate(['name' => 'required|string|max:100', 'email' => 'required|email|max:150|unique:users,email', 'phone' => 'required|string|max:30|unique:users,phone', 'gender' => 'required|in:male,female', 'password' => 'required|min:8|confirmed', 'profile_photo' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048']);
+        $v = $r->validate([
+             'profile_for' => 'required|in:Myself,Daughter,Son,Sister,Brother,Relative,Friend',
+             'name' => 'required|string|max:100',
+             'email' => 'required|email|max:150|unique:users,email',
+              'phone' => 'required|string|max:30|unique:users,phone', 
+              'gender' => 'required|in:male,female', 
+              'password' => 'required|min:8|confirmed',
+              'profile_photo' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048']);
         $path = $r->hasFile('profile_photo') ? $r->file('profile_photo')->store('profiles', 'public') : null;
         $u = User::create([...$v, 'password' => $v['password'], 'profile_photo' => $path, 'role' => 'customer', 'status' => 'pending', 'is_active' => true]);
         Profile::create(['user_id' => $u->id]);

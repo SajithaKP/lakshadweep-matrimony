@@ -64,6 +64,10 @@
 
 
             {{-- PROFILE NAME --}}
+            <div class="profile-for-badge">
+                <span>Profile created for:</span>
+                <strong>{{ $u->profile_for ?? 'Myself' }}</strong>
+            </div>
             <div class="col-md-8">
 
                 <h2 class="mb-2">

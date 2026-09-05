@@ -16,6 +16,36 @@
                     @endif
                     <form method="POST" action="{{ route('register.store') }}" enctype="multipart/form-data">@csrf<div
                             class="row">
+                            <div class="mb-3">
+                                <label for="profile_for" class="form-label">
+                                    Profile Created For
+                                </label>
+
+                                <select name="profile_for" id="profile_for" class="form-select" required>
+                                    <option value="">Select</option>
+                                    <option value="Myself" {{ old('profile_for') == 'Myself' ? 'selected' : '' }}>
+                                        Myself
+                                    </option>
+                                    <option value="Daughter" {{ old('profile_for') == 'Daughter' ? 'selected' : '' }}>
+                                        Daughter
+                                    </option>
+                                    <option value="Son" {{ old('profile_for') == 'Son' ? 'selected' : '' }}>
+                                        Son
+                                    </option>
+                                    <option value="Sister" {{ old('profile_for') == 'Sister' ? 'selected' : '' }}>
+                                        Sister
+                                    </option>
+                                    <option value="Brother" {{ old('profile_for') == 'Brother' ? 'selected' : '' }}>
+                                        Brother
+                                    </option>
+                                    <option value="Relative" {{ old('profile_for') == 'Relative' ? 'selected' : '' }}>
+                                        Relative
+                                    </option>
+                                    <option value="Friend" {{ old('profile_for') == 'Friend' ? 'selected' : '' }}>
+                                        Friend
+                                    </option>
+                                </select>
+                            </div>
                             <div class="col-md-6 mb-3"><label class="form-label">Full Name</label><input name="name"
                                     value="{{ old('name') }}" class="form-control" required></div>
                             <div class="col-md-6 mb-3"><label class="form-label">Gender</label><select name="gender"
